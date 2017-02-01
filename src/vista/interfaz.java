@@ -30,11 +30,11 @@ public class interfaz extends javax.swing.JFrame {
     
     public void llenarMenu(){
         List<Avatar> avatars = new ArrayList<Avatar>();
-        avatars.add(new Avatar("Admin", loadImage("/imagenes/exit.png")));
-        avatars.add(new Avatar("Clientes", loadImage("/imagenes/exit.png")));
-        avatars.add(new Avatar("Trabajadores", loadImage("/imagenes/exit.png")));
-        avatars.add(new Avatar("Maquinas", loadImage("/imagenes/exit.png")));
-        avatars.add(new Avatar("Clases", loadImage("/imagenes/exit.png")));
+        avatars.add(new Avatar("Admin", loadImage("/imagenes/admin.png")));
+        avatars.add(new Avatar("Clientes", loadImage("/imagenes/clients.png")));
+        avatars.add(new Avatar("Trabajadores", loadImage("/imagenes/trabajador.png")));
+        avatars.add(new Avatar("Maquinas", loadImage("/imagenes/maquina.png")));
+        avatars.add(new Avatar("Clases", loadImage("/imagenes/clase.png")));
         avatars.add(new Avatar("Exit", loadImage("/imagenes/exit.png")));
         
         avatarAdmin.setAvatars(avatars);
@@ -88,6 +88,7 @@ public class interfaz extends javax.swing.JFrame {
         });
         panelCurves2.add(buttonAction2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 510, 320, 40));
 
+        textFieldRound2.setToolTipText("");
         textFieldRound2.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         panelCurves2.add(textFieldRound2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 390, 320, 40));
 
