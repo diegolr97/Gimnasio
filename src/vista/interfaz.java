@@ -70,6 +70,11 @@ public class interfaz extends javax.swing.JFrame {
         buttonCircle1 = new org.edisoncor.gui.button.ButtonCircle();
         avatarAdmin = new org.edisoncor.gui.panel.PanelAvatarChooser();
         buttonIpod1 = new org.edisoncor.gui.button.ButtonIpod();
+        labelMetric1 = new org.edisoncor.gui.label.LabelMetric();
+        labelMetric4 = new org.edisoncor.gui.label.LabelMetric();
+        administradorAdmin = new org.edisoncor.gui.panel.Panel();
+        labelTask1 = new org.edisoncor.gui.label.LabelTask();
+        panel1 = new org.edisoncor.gui.panel.Panel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -115,7 +120,7 @@ public class interfaz extends javax.swing.JFrame {
         login.setLayout(loginLayout);
         loginLayout.setHorizontalGroup(
             loginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panelCurves2, javax.swing.GroupLayout.DEFAULT_SIZE, 1160, Short.MAX_VALUE)
+            .addComponent(panelCurves2, javax.swing.GroupLayout.DEFAULT_SIZE, 1161, Short.MAX_VALUE)
         );
         loginLayout.setVerticalGroup(
             loginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -142,16 +147,62 @@ public class interfaz extends javax.swing.JFrame {
         avatarAdminLayout.setHorizontalGroup(
             avatarAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(avatarAdminLayout.createSequentialGroup()
-                .addContainerGap(543, Short.MAX_VALUE)
+                .addContainerGap(544, Short.MAX_VALUE)
                 .addComponent(buttonIpod1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(544, Short.MAX_VALUE))
         );
         avatarAdminLayout.setVerticalGroup(
             avatarAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(avatarAdminLayout.createSequentialGroup()
-                .addContainerGap(302, Short.MAX_VALUE)
+                .addContainerGap(313, Short.MAX_VALUE)
                 .addComponent(buttonIpod1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(302, Short.MAX_VALUE))
+                .addContainerGap(314, Short.MAX_VALUE))
+        );
+
+        labelMetric1.setText("Admin:");
+
+        labelMetric4.setText("xxxxxxxxx");
+
+        labelTask1.setForeground(new java.awt.Color(240, 240, 240));
+        labelTask1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/admin42.png"))); // NOI18N
+        labelTask1.setText("Gestion Administradores");
+        labelTask1.setToolTipText("");
+        labelTask1.setDescription(" ");
+
+        panel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(240, 240, 240)));
+
+        javax.swing.GroupLayout panel1Layout = new javax.swing.GroupLayout(panel1);
+        panel1.setLayout(panel1Layout);
+        panel1Layout.setHorizontalGroup(
+            panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1139, Short.MAX_VALUE)
+        );
+        panel1Layout.setVerticalGroup(
+            panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 598, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout administradorAdminLayout = new javax.swing.GroupLayout(administradorAdmin);
+        administradorAdmin.setLayout(administradorAdminLayout);
+        administradorAdminLayout.setHorizontalGroup(
+            administradorAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(administradorAdminLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(administradorAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(panel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(administradorAdminLayout.createSequentialGroup()
+                        .addComponent(labelTask1, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        administradorAdminLayout.setVerticalGroup(
+            administradorAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(administradorAdminLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(labelTask1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(panel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout administradorLayout = new javax.swing.GroupLayout(administrador);
@@ -160,24 +211,38 @@ public class interfaz extends javax.swing.JFrame {
             administradorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(avatarAdmin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, administradorLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap()
+                .addComponent(labelMetric1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(labelMetric4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(buttonCircle1, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
+            .addGroup(administradorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(administradorAdmin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         administradorLayout.setVerticalGroup(
             administradorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(administradorLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(buttonCircle1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(29, 29, 29)
+                .addGroup(administradorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(buttonCircle1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(administradorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(labelMetric1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(labelMetric4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(avatarAdmin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(administradorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, administradorLayout.createSequentialGroup()
+                    .addGap(0, 36, Short.MAX_VALUE)
+                    .addComponent(administradorAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
 
         javax.swing.GroupLayout panelPrincipalLayout = new javax.swing.GroupLayout(panelPrincipal);
         panelPrincipal.setLayout(panelPrincipalLayout);
         panelPrincipalLayout.setHorizontalGroup(
             panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1160, Short.MAX_VALUE)
+            .addGap(0, 1161, Short.MAX_VALUE)
             .addGroup(panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(login, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -236,22 +301,30 @@ public class interfaz extends javax.swing.JFrame {
         
     }//GEN-LAST:event_buttonAction2ActionPerformed
 
-    private void buttonCircle1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonCircle1ActionPerformed
-        login.setVisible(true);
-        administrador.setVisible(false);
-    }//GEN-LAST:event_buttonCircle1ActionPerformed
-
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void buttonIpod1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonIpod1ActionPerformed
         //Boton ipod admin
+        if(avatarAdmin.getSelectedtitulo().equals("Admin")){
+            administradorAdmin.setVisible(true);
+            administrador.setVisible(true);
+            avatarAdmin.setVisible(false);
+        }
+        
         if(avatarAdmin.getSelectedtitulo().equals("Exit")){
             login.setVisible(true);
+            administradorAdmin.setVisible(false);
             administrador.setVisible(false);
         }
     }//GEN-LAST:event_buttonIpod1ActionPerformed
+
+    private void buttonCircle1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonCircle1ActionPerformed
+        login.setVisible(false);
+        administrador.setVisible(true);
+        avatarAdmin.setVisible(true);
+    }//GEN-LAST:event_buttonCircle1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -290,6 +363,7 @@ public class interfaz extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private org.edisoncor.gui.panel.Panel administrador;
+    private org.edisoncor.gui.panel.Panel administradorAdmin;
     private org.edisoncor.gui.panel.PanelAvatarChooser avatarAdmin;
     private org.edisoncor.gui.button.ButtonAction buttonAction2;
     private org.edisoncor.gui.button.ButtonCircle buttonCircle1;
@@ -298,9 +372,13 @@ public class interfaz extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
+    private org.edisoncor.gui.label.LabelMetric labelMetric1;
     private org.edisoncor.gui.label.LabelMetric labelMetric2;
     private org.edisoncor.gui.label.LabelMetric labelMetric3;
+    private org.edisoncor.gui.label.LabelMetric labelMetric4;
+    private org.edisoncor.gui.label.LabelTask labelTask1;
     private org.edisoncor.gui.panel.Panel login;
+    private org.edisoncor.gui.panel.Panel panel1;
     private org.edisoncor.gui.panel.PanelCurves panelCurves2;
     private org.edisoncor.gui.panel.Panel panelPrincipal;
     private org.edisoncor.gui.passwordField.PasswordFieldRound passwordFieldRound1;
