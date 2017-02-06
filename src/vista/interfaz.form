@@ -942,8 +942,8 @@
                                               </Group>
                                               <Group type="102" alignment="1" attributes="0">
                                                   <Component id="labelMetric21" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                  <Component id="jDateChooser1" min="-2" pref="145" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="jDateChooser1" min="-2" pref="151" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                           <Group type="103" groupAlignment="0" attributes="0">
@@ -971,7 +971,7 @@
                                           </Group>
                                       </Group>
                                   </Group>
-                                  <EmptySpace max="32767" attributes="0"/>
+                                  <EmptySpace pref="30" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -988,9 +988,9 @@
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="1" attributes="0">
                                       <Component id="labelMetric21" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jDateChooser1" min="-2" pref="23" max="-2" attributes="0"/>
                                       <Component id="labelMetric18" alignment="1" min="-2" max="-2" attributes="0"/>
                                       <Component id="textField12" alignment="1" min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Component id="jDateChooser1" min="-2" pref="24" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
@@ -1080,8 +1080,6 @@
                             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="textField14ActionPerformed"/>
                           </Events>
                         </Component>
-                        <Component class="com.toedter.calendar.JDateChooser" name="jDateChooser1">
-                        </Component>
                         <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric21">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="F. Nacimiento:"/>
@@ -1099,6 +1097,8 @@
                           </Properties>
                         </Component>
                         <Component class="org.edisoncor.gui.textField.TextField" name="textField5">
+                        </Component>
+                        <Component class="com.toedter.calendar.JDateChooser" name="jDateChooser1">
                         </Component>
                       </SubComponents>
                     </Container>
