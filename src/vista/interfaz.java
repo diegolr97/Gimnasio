@@ -106,6 +106,7 @@ public class interfaz extends javax.swing.JFrame implements Runnable {
         loginConstraseña = new org.edisoncor.gui.passwordField.PasswordFieldRound();
         jLabel1 = new javax.swing.JLabel();
         administrador = new org.edisoncor.gui.panel.Panel();
+        reloj = new javax.swing.JLabel();
         adminRetroceso = new org.edisoncor.gui.button.ButtonCircle();
         labelMetric1 = new org.edisoncor.gui.label.LabelMetric();
         adminUsuario = new org.edisoncor.gui.label.LabelMetric();
@@ -114,23 +115,23 @@ public class interfaz extends javax.swing.JFrame implements Runnable {
         administradorAdmin = new org.edisoncor.gui.panel.Panel();
         labelTask1 = new org.edisoncor.gui.label.LabelTask();
         panel1 = new org.edisoncor.gui.panel.Panel();
-        adminAdministradoresList = new javax.swing.JScrollPane();
+        listAdminAdministradores = new javax.swing.JScrollPane();
         jList1 = new javax.swing.JList<>();
         panel2 = new org.edisoncor.gui.panel.Panel();
         labelMetric11 = new org.edisoncor.gui.label.LabelMetric();
         panel3 = new org.edisoncor.gui.panel.Panel();
         labelMetric5 = new org.edisoncor.gui.label.LabelMetric();
-        adminAdministradorNombre = new org.edisoncor.gui.textField.TextField();
+        txtAdminAdministradorNombre = new org.edisoncor.gui.textField.TextField();
         labelMetric12 = new org.edisoncor.gui.label.LabelMetric();
-        adminAdministradorApellidos = new org.edisoncor.gui.textField.TextField();
-        adminAdministradorDireccion = new org.edisoncor.gui.textField.TextField();
+        txtAdminAdministradorApellidos = new org.edisoncor.gui.textField.TextField();
+        txtAdminAdministradorDireccion = new org.edisoncor.gui.textField.TextField();
         labelMetric6 = new org.edisoncor.gui.label.LabelMetric();
-        adminAdministradorCodPostal = new org.edisoncor.gui.textField.TextField();
+        txtAdminAdministradorCodPostal = new org.edisoncor.gui.textField.TextField();
         labelMetric13 = new org.edisoncor.gui.label.LabelMetric();
         labelMetric14 = new org.edisoncor.gui.label.LabelMetric();
-        adminAdministradorTelefono = new org.edisoncor.gui.textField.TextField();
+        txtAdminAdministradorTelefono = new org.edisoncor.gui.textField.TextField();
         labelMetric15 = new org.edisoncor.gui.label.LabelMetric();
-        adminAdministradorCorreo = new org.edisoncor.gui.textField.TextField();
+        txtAdminAdministradorCorreo = new org.edisoncor.gui.textField.TextField();
         panel4 = new org.edisoncor.gui.panel.Panel();
         buttonAction1 = new org.edisoncor.gui.button.ButtonAction();
         buttonAction2 = new org.edisoncor.gui.button.ButtonAction();
@@ -148,27 +149,56 @@ public class interfaz extends javax.swing.JFrame implements Runnable {
         jTable1 = new javax.swing.JTable();
         panel6 = new org.edisoncor.gui.panel.Panel();
         labelMetric7 = new org.edisoncor.gui.label.LabelMetric();
-        textField3 = new org.edisoncor.gui.textField.TextField();
+        txtAdminClienteNombre = new org.edisoncor.gui.textField.TextField();
         labelMetric17 = new org.edisoncor.gui.label.LabelMetric();
-        textField11 = new org.edisoncor.gui.textField.TextField();
-        textField12 = new org.edisoncor.gui.textField.TextField();
+        txtAdminClienteApellidos = new org.edisoncor.gui.textField.TextField();
+        txtAdminClienteDireccion = new org.edisoncor.gui.textField.TextField();
         labelMetric8 = new org.edisoncor.gui.label.LabelMetric();
-        textField4 = new org.edisoncor.gui.textField.TextField();
+        txtAdminClienteCodPostal = new org.edisoncor.gui.textField.TextField();
         labelMetric18 = new org.edisoncor.gui.label.LabelMetric();
         labelMetric19 = new org.edisoncor.gui.label.LabelMetric();
-        textField13 = new org.edisoncor.gui.textField.TextField();
+        txtAdminClienteTelefono = new org.edisoncor.gui.textField.TextField();
         labelMetric20 = new org.edisoncor.gui.label.LabelMetric();
-        textField14 = new org.edisoncor.gui.textField.TextField();
+        txtAdminClienteCorreo = new org.edisoncor.gui.textField.TextField();
         labelMetric21 = new org.edisoncor.gui.label.LabelMetric();
         labelMetric9 = new org.edisoncor.gui.label.LabelMetric();
-        textField5 = new org.edisoncor.gui.textField.TextField();
-        jDateChooser1 = new com.toedter.calendar.JDateChooser();
+        txtAdminClienteCiudad = new org.edisoncor.gui.textField.TextField();
+        dcAdminClienteFecha = new com.toedter.calendar.JDateChooser();
         panel8 = new org.edisoncor.gui.panel.Panel();
         buttonAction4 = new org.edisoncor.gui.button.ButtonAction();
         buttonAction3 = new org.edisoncor.gui.button.ButtonAction();
         buttonAction6 = new org.edisoncor.gui.button.ButtonAction();
         buttonAction5 = new org.edisoncor.gui.button.ButtonAction();
-        reloj = new javax.swing.JLabel();
+        buttonAction10 = new org.edisoncor.gui.button.ButtonAction();
+        buttonAction11 = new org.edisoncor.gui.button.ButtonAction();
+        buttonAction12 = new org.edisoncor.gui.button.ButtonAction();
+        administradorTrabajadores = new org.edisoncor.gui.panel.Panel();
+        labelTask3 = new org.edisoncor.gui.label.LabelTask();
+        panel9 = new org.edisoncor.gui.panel.Panel();
+        listAdminAdministradores1 = new javax.swing.JScrollPane();
+        jList2 = new javax.swing.JList<>();
+        panel10 = new org.edisoncor.gui.panel.Panel();
+        labelMetric22 = new org.edisoncor.gui.label.LabelMetric();
+        panel11 = new org.edisoncor.gui.panel.Panel();
+        labelMetric10 = new org.edisoncor.gui.label.LabelMetric();
+        txtAdminAdministradorNombre1 = new org.edisoncor.gui.textField.TextField();
+        labelMetric23 = new org.edisoncor.gui.label.LabelMetric();
+        txtAdminAdministradorApellidos1 = new org.edisoncor.gui.textField.TextField();
+        txtAdminAdministradorDireccion1 = new org.edisoncor.gui.textField.TextField();
+        labelMetric24 = new org.edisoncor.gui.label.LabelMetric();
+        txtAdminAdministradorCodPostal1 = new org.edisoncor.gui.textField.TextField();
+        labelMetric25 = new org.edisoncor.gui.label.LabelMetric();
+        labelMetric26 = new org.edisoncor.gui.label.LabelMetric();
+        txtAdminAdministradorTelefono1 = new org.edisoncor.gui.textField.TextField();
+        labelMetric27 = new org.edisoncor.gui.label.LabelMetric();
+        txtAdminAdministradorCorreo1 = new org.edisoncor.gui.textField.TextField();
+        panel12 = new org.edisoncor.gui.panel.Panel();
+        buttonAction13 = new org.edisoncor.gui.button.ButtonAction();
+        buttonAction14 = new org.edisoncor.gui.button.ButtonAction();
+        buttonAction15 = new org.edisoncor.gui.button.ButtonAction();
+        buttonAction16 = new org.edisoncor.gui.button.ButtonAction();
+        buttonAction17 = new org.edisoncor.gui.button.ButtonAction();
+        jLabel4 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -221,6 +251,9 @@ public class interfaz extends javax.swing.JFrame implements Runnable {
             .addComponent(panelCurves2, javax.swing.GroupLayout.DEFAULT_SIZE, 740, Short.MAX_VALUE)
         );
 
+        reloj.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        reloj.setForeground(new java.awt.Color(255, 255, 255));
+
         adminRetroceso.setText("buttonCircle1");
         adminRetroceso.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -252,9 +285,9 @@ public class interfaz extends javax.swing.JFrame implements Runnable {
         avatarAdminLayout.setVerticalGroup(
             avatarAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(avatarAdminLayout.createSequentialGroup()
-                .addContainerGap(314, Short.MAX_VALUE)
+                .addContainerGap(90, Short.MAX_VALUE)
                 .addComponent(adminAvatarBoton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(314, Short.MAX_VALUE))
+                .addContainerGap(90, Short.MAX_VALUE))
         );
 
         labelTask1.setForeground(new java.awt.Color(240, 240, 240));
@@ -273,7 +306,7 @@ public class interfaz extends javax.swing.JFrame implements Runnable {
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
-        adminAdministradoresList.setViewportView(jList1);
+        listAdminAdministradores.setViewportView(jList1);
 
         panel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(240, 240, 240)));
 
@@ -314,23 +347,23 @@ public class interfaz extends javax.swing.JFrame implements Runnable {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(panel3Layout.createSequentialGroup()
-                        .addComponent(adminAdministradorNombre, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(txtAdminAdministradorNombre, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGap(18, 18, 18)
                         .addComponent(labelMetric12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(adminAdministradorApellidos, javax.swing.GroupLayout.PREFERRED_SIZE, 352, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(txtAdminAdministradorApellidos, javax.swing.GroupLayout.PREFERRED_SIZE, 352, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(panel3Layout.createSequentialGroup()
-                        .addComponent(adminAdministradorTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtAdminAdministradorTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(labelMetric15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(22, 22, 22)
-                        .addComponent(adminAdministradorCorreo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(txtAdminAdministradorCorreo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(panel3Layout.createSequentialGroup()
-                        .addComponent(adminAdministradorDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, 408, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtAdminAdministradorDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, 408, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(labelMetric6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(adminAdministradorCodPostal, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(txtAdminAdministradorCodPostal, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(24, 24, 24))
         );
         panel3Layout.setVerticalGroup(
@@ -339,24 +372,24 @@ public class interfaz extends javax.swing.JFrame implements Runnable {
                 .addContainerGap(38, Short.MAX_VALUE)
                 .addGroup(panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(labelMetric5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(adminAdministradorNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtAdminAdministradorNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(labelMetric12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(adminAdministradorApellidos, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtAdminAdministradorApellidos, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(30, 30, 30)
                 .addGroup(panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(labelMetric13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(labelMetric6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(adminAdministradorCodPostal, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(txtAdminAdministradorCodPostal, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(panel3Layout.createSequentialGroup()
-                        .addComponent(adminAdministradorDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtAdminAdministradorDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(1, 1, 1)))
                 .addGap(31, 31, 31)
                 .addGroup(panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(labelMetric14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(adminAdministradorTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtAdminAdministradorTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(labelMetric15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(adminAdministradorCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtAdminAdministradorCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(40, 40, 40))
         );
 
@@ -447,7 +480,7 @@ public class interfaz extends javax.swing.JFrame implements Runnable {
             panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(adminAdministradoresList)
+                .addComponent(listAdminAdministradores)
                 .addGap(18, 18, 18)
                 .addComponent(panel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
@@ -458,7 +491,7 @@ public class interfaz extends javax.swing.JFrame implements Runnable {
                 .addContainerGap()
                 .addGroup(panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(panel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(adminAdministradoresList))
+                    .addComponent(listAdminAdministradores))
                 .addContainerGap())
         );
 
@@ -541,9 +574,9 @@ public class interfaz extends javax.swing.JFrame implements Runnable {
         labelMetric8.setText("Cod. Postal");
         labelMetric8.setFont(new java.awt.Font("Arial", 1, 19)); // NOI18N
 
-        textField4.addActionListener(new java.awt.event.ActionListener() {
+        txtAdminClienteCodPostal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                textField4ActionPerformed(evt);
+                txtAdminClienteCodPostalActionPerformed(evt);
             }
         });
 
@@ -556,9 +589,9 @@ public class interfaz extends javax.swing.JFrame implements Runnable {
         labelMetric20.setText("Correo:");
         labelMetric20.setFont(new java.awt.Font("Arial", 1, 19)); // NOI18N
 
-        textField14.addActionListener(new java.awt.event.ActionListener() {
+        txtAdminClienteCorreo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                textField14ActionPerformed(evt);
+                txtAdminClienteCorreoActionPerformed(evt);
             }
         });
 
@@ -578,25 +611,25 @@ public class interfaz extends javax.swing.JFrame implements Runnable {
                     .addGroup(panel6Layout.createSequentialGroup()
                         .addComponent(labelMetric7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(26, 26, 26)
-                        .addComponent(textField3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(txtAdminClienteNombre, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGap(18, 18, 18)
                         .addComponent(labelMetric17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(textField11, javax.swing.GroupLayout.PREFERRED_SIZE, 352, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(txtAdminClienteApellidos, javax.swing.GroupLayout.PREFERRED_SIZE, 352, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(panel6Layout.createSequentialGroup()
                         .addGroup(panel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(panel6Layout.createSequentialGroup()
                                 .addComponent(labelMetric8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(textField4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addComponent(txtAdminClienteCodPostal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, panel6Layout.createSequentialGroup()
                                 .addComponent(labelMetric9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(textField5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addComponent(txtAdminClienteCiudad, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addGroup(panel6Layout.createSequentialGroup()
                                 .addComponent(labelMetric21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jDateChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(dcAdminClienteFecha, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGroup(panel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(panel6Layout.createSequentialGroup()
                                 .addGap(18, 18, Short.MAX_VALUE)
@@ -604,16 +637,16 @@ public class interfaz extends javax.swing.JFrame implements Runnable {
                                     .addGroup(panel6Layout.createSequentialGroup()
                                         .addComponent(labelMetric18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(textField12, javax.swing.GroupLayout.PREFERRED_SIZE, 349, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(txtAdminClienteDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, 349, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(panel6Layout.createSequentialGroup()
                                         .addComponent(labelMetric19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(17, 17, 17)
-                                        .addComponent(textField13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                                        .addComponent(txtAdminClienteTelefono, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                             .addGroup(panel6Layout.createSequentialGroup()
                                 .addGap(46, 46, 46)
                                 .addComponent(labelMetric20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(textField14, javax.swing.GroupLayout.PREFERRED_SIZE, 349, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addComponent(txtAdminClienteCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 349, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addContainerGap(30, Short.MAX_VALUE))
         );
         panel6Layout.setVerticalGroup(
@@ -622,45 +655,56 @@ public class interfaz extends javax.swing.JFrame implements Runnable {
                 .addGap(38, 38, 38)
                 .addGroup(panel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(labelMetric7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(textField3, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtAdminClienteNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(labelMetric17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(textField11, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtAdminClienteApellidos, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(panel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(labelMetric21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(labelMetric18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(textField12, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jDateChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtAdminClienteDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(dcAdminClienteFecha, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(panel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(labelMetric19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(textField13, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtAdminClienteTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(panel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(textField5, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtAdminClienteCiudad, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(labelMetric9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addGroup(panel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(labelMetric8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(textField4, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtAdminClienteCodPostal, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(labelMetric20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(textField14, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtAdminClienteCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(33, Short.MAX_VALUE))
         );
 
         panel8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(240, 240, 240)));
 
-        buttonAction4.setText("buttonAction3");
+        buttonAction4.setText("Editar");
+        buttonAction4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonAction4ActionPerformed(evt);
+            }
+        });
 
-        buttonAction3.setText("buttonAction3");
+        buttonAction3.setText("Modificar");
 
-        buttonAction6.setText("buttonAction3");
+        buttonAction6.setText("Nuevo");
         buttonAction6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 buttonAction6ActionPerformed(evt);
             }
         });
 
-        buttonAction5.setText("buttonAction3");
+        buttonAction5.setText("Guardar");
+
+        buttonAction10.setText("Tarifas");
+
+        buttonAction11.setText("Mensualidad");
+
+        buttonAction12.setText("Eliminar");
 
         javax.swing.GroupLayout panel8Layout = new javax.swing.GroupLayout(panel8);
         panel8.setLayout(panel8Layout);
@@ -669,26 +713,41 @@ public class interfaz extends javax.swing.JFrame implements Runnable {
             .addGroup(panel8Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(panel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(buttonAction5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(buttonAction4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
-                .addGroup(panel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(buttonAction6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(buttonAction3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(panel8Layout.createSequentialGroup()
+                        .addGroup(panel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(buttonAction5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(buttonAction4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
+                        .addGroup(panel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(buttonAction6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(buttonAction3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(panel8Layout.createSequentialGroup()
+                        .addComponent(buttonAction10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(buttonAction11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel8Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(buttonAction12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         panel8Layout.setVerticalGroup(
             panel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panel8Layout.createSequentialGroup()
-                .addGap(22, 22, 22)
+                .addContainerGap()
                 .addGroup(panel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(buttonAction6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(buttonAction4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                    .addComponent(buttonAction4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(buttonAction6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(panel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(buttonAction3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(buttonAction5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(23, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(buttonAction12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(panel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(buttonAction10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(buttonAction11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout panel5Layout = new javax.swing.GroupLayout(panel5);
@@ -716,11 +775,9 @@ public class interfaz extends javax.swing.JFrame implements Runnable {
                 .addGap(41, 41, 41)
                 .addComponent(labelMetric16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(29, 29, 29)
-                .addGroup(panel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(panel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel5Layout.createSequentialGroup()
-                        .addComponent(panel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(88, 88, 88)))
+                .addGroup(panel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(panel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(panel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(43, 43, 43)
                 .addGroup(panel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -751,8 +808,233 @@ public class interfaz extends javax.swing.JFrame implements Runnable {
                 .addContainerGap())
         );
 
-        reloj.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        reloj.setForeground(new java.awt.Color(255, 255, 255));
+        labelTask3.setForeground(new java.awt.Color(240, 240, 240));
+        labelTask3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/trabajador42.png"))); // NOI18N
+        labelTask3.setText("Gestion Trabajadores");
+        labelTask3.setToolTipText("");
+        labelTask3.setDescription(" ");
+
+        panel9.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        jList2.setBackground(new java.awt.Color(0, 6, 33));
+        jList2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jList2.setForeground(new java.awt.Color(240, 240, 240));
+        jList2.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        listAdminAdministradores1.setViewportView(jList2);
+
+        panel10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(240, 240, 240)));
+
+        labelMetric22.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelMetric22.setText("DATOS TRABAJADORES");
+        labelMetric22.setFont(new java.awt.Font("Arial", 1, 36)); // NOI18N
+
+        panel11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
+
+        labelMetric10.setText("Nombre:");
+        labelMetric10.setFont(new java.awt.Font("Arial", 1, 19)); // NOI18N
+
+        labelMetric23.setText("Apellidos:");
+        labelMetric23.setFont(new java.awt.Font("Arial", 1, 19)); // NOI18N
+
+        labelMetric24.setText("Cod. Postal");
+        labelMetric24.setFont(new java.awt.Font("Arial", 1, 19)); // NOI18N
+
+        labelMetric25.setText("Direccion:");
+        labelMetric25.setFont(new java.awt.Font("Arial", 1, 19)); // NOI18N
+
+        labelMetric26.setText("Telefono:");
+        labelMetric26.setFont(new java.awt.Font("Arial", 1, 19)); // NOI18N
+
+        labelMetric27.setText("Correo:");
+        labelMetric27.setFont(new java.awt.Font("Arial", 1, 19)); // NOI18N
+
+        javax.swing.GroupLayout panel11Layout = new javax.swing.GroupLayout(panel11);
+        panel11.setLayout(panel11Layout);
+        panel11Layout.setHorizontalGroup(
+            panel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel11Layout.createSequentialGroup()
+                .addContainerGap(28, Short.MAX_VALUE)
+                .addGroup(panel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(labelMetric25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(labelMetric10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(labelMetric26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(panel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(panel11Layout.createSequentialGroup()
+                        .addComponent(txtAdminAdministradorNombre1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(18, 18, 18)
+                        .addComponent(labelMetric23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(txtAdminAdministradorApellidos1, javax.swing.GroupLayout.PREFERRED_SIZE, 352, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(panel11Layout.createSequentialGroup()
+                        .addComponent(txtAdminAdministradorTelefono1, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(labelMetric27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(22, 22, 22)
+                        .addComponent(txtAdminAdministradorCorreo1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(panel11Layout.createSequentialGroup()
+                        .addComponent(txtAdminAdministradorDireccion1, javax.swing.GroupLayout.PREFERRED_SIZE, 408, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(labelMetric24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(txtAdminAdministradorCodPostal1, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(24, 24, 24))
+        );
+        panel11Layout.setVerticalGroup(
+            panel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel11Layout.createSequentialGroup()
+                .addContainerGap(38, Short.MAX_VALUE)
+                .addGroup(panel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(labelMetric10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtAdminAdministradorNombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(labelMetric23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtAdminAdministradorApellidos1, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(30, 30, 30)
+                .addGroup(panel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(panel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(labelMetric25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(labelMetric24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtAdminAdministradorCodPostal1, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(panel11Layout.createSequentialGroup()
+                        .addComponent(txtAdminAdministradorDireccion1, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(1, 1, 1)))
+                .addGap(31, 31, 31)
+                .addGroup(panel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(labelMetric26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtAdminAdministradorTelefono1, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(labelMetric27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtAdminAdministradorCorreo1, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(40, 40, 40))
+        );
+
+        panel12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
+
+        buttonAction13.setText("buttonAction1");
+
+        buttonAction14.setText("buttonAction1");
+
+        buttonAction15.setText("buttonAction1");
+
+        buttonAction16.setText("buttonAction1");
+
+        buttonAction17.setText("buttonAction1");
+
+        javax.swing.GroupLayout panel12Layout = new javax.swing.GroupLayout(panel12);
+        panel12.setLayout(panel12Layout);
+        panel12Layout.setHorizontalGroup(
+            panel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel12Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(panel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(buttonAction14, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(buttonAction13, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(panel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(buttonAction17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(buttonAction16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(buttonAction15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+        panel12Layout.setVerticalGroup(
+            panel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel12Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(panel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(buttonAction14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(buttonAction16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(panel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(buttonAction15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(buttonAction13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(buttonAction17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/logo205.png"))); // NOI18N
+
+        javax.swing.GroupLayout panel10Layout = new javax.swing.GroupLayout(panel10);
+        panel10.setLayout(panel10Layout);
+        panel10Layout.setHorizontalGroup(
+            panel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel10Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(panel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(labelMetric22, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(panel10Layout.createSequentialGroup()
+                        .addGroup(panel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(panel10Layout.createSequentialGroup()
+                                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(370, 370, 370)
+                                .addComponent(panel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(panel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        panel10Layout.setVerticalGroup(
+            panel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel10Layout.createSequentialGroup()
+                .addContainerGap(44, Short.MAX_VALUE)
+                .addComponent(labelMetric22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(panel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(panel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel10Layout.createSequentialGroup()
+                        .addGap(37, 37, 37)
+                        .addComponent(jLabel4))
+                    .addGroup(panel10Layout.createSequentialGroup()
+                        .addGap(29, 29, 29)
+                        .addComponent(panel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout panel9Layout = new javax.swing.GroupLayout(panel9);
+        panel9.setLayout(panel9Layout);
+        panel9Layout.setHorizontalGroup(
+            panel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel9Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(listAdminAdministradores1)
+                .addGap(18, 18, 18)
+                .addComponent(panel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        panel9Layout.setVerticalGroup(
+            panel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel9Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(panel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(panel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(listAdminAdministradores1))
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout administradorTrabajadoresLayout = new javax.swing.GroupLayout(administradorTrabajadores);
+        administradorTrabajadores.setLayout(administradorTrabajadoresLayout);
+        administradorTrabajadoresLayout.setHorizontalGroup(
+            administradorTrabajadoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(administradorTrabajadoresLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(administradorTrabajadoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(panel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(administradorTrabajadoresLayout.createSequentialGroup()
+                        .addComponent(labelTask3, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 845, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        administradorTrabajadoresLayout.setVerticalGroup(
+            administradorTrabajadoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(administradorTrabajadoresLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(labelTask3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(panel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
 
         javax.swing.GroupLayout administradorLayout = new javax.swing.GroupLayout(administrador);
         administrador.setLayout(administradorLayout);
@@ -776,6 +1058,11 @@ public class interfaz extends javax.swing.JFrame implements Runnable {
                     .addContainerGap()
                     .addComponent(administradorClient, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addContainerGap()))
+            .addGroup(administradorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(administradorLayout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(administradorTrabajadores, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addContainerGap()))
         );
         administradorLayout.setVerticalGroup(
             administradorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -798,6 +1085,11 @@ public class interfaz extends javax.swing.JFrame implements Runnable {
                     .addContainerGap(26, Short.MAX_VALUE)
                     .addComponent(administradorClient, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addContainerGap()))
+            .addGroup(administradorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, administradorLayout.createSequentialGroup()
+                    .addContainerGap(28, Short.MAX_VALUE)
+                    .addComponent(administradorTrabajadores, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(10, 10, 10)))
         );
 
         javax.swing.GroupLayout panelPrincipalLayout = new javax.swing.GroupLayout(panelPrincipal);
@@ -812,7 +1104,7 @@ public class interfaz extends javax.swing.JFrame implements Runnable {
         );
         panelPrincipalLayout.setVerticalGroup(
             panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 659, Short.MAX_VALUE)
+            .addGap(0, 742, Short.MAX_VALUE)
             .addGroup(panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(login, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -908,13 +1200,17 @@ public class interfaz extends javax.swing.JFrame implements Runnable {
         // TODO add your handling code here:
     }//GEN-LAST:event_buttonAction6ActionPerformed
 
-    private void textField14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textField14ActionPerformed
+    private void txtAdminClienteCorreoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAdminClienteCorreoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_textField14ActionPerformed
+    }//GEN-LAST:event_txtAdminClienteCorreoActionPerformed
 
-    private void textField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textField4ActionPerformed
+    private void txtAdminClienteCodPostalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAdminClienteCodPostalActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_textField4ActionPerformed
+    }//GEN-LAST:event_txtAdminClienteCodPostalActionPerformed
+
+    private void buttonAction4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonAction4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonAction4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -952,21 +1248,23 @@ public class interfaz extends javax.swing.JFrame implements Runnable {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private org.edisoncor.gui.textField.TextField adminAdministradorApellidos;
-    private org.edisoncor.gui.textField.TextField adminAdministradorCodPostal;
-    private org.edisoncor.gui.textField.TextField adminAdministradorCorreo;
-    private org.edisoncor.gui.textField.TextField adminAdministradorDireccion;
-    private org.edisoncor.gui.textField.TextField adminAdministradorNombre;
-    private org.edisoncor.gui.textField.TextField adminAdministradorTelefono;
-    private javax.swing.JScrollPane adminAdministradoresList;
     private org.edisoncor.gui.button.ButtonIpod adminAvatarBoton;
     private org.edisoncor.gui.button.ButtonCircle adminRetroceso;
     private org.edisoncor.gui.label.LabelMetric adminUsuario;
     private org.edisoncor.gui.panel.Panel administrador;
     private org.edisoncor.gui.panel.Panel administradorAdmin;
     private org.edisoncor.gui.panel.Panel administradorClient;
+    private org.edisoncor.gui.panel.Panel administradorTrabajadores;
     private org.edisoncor.gui.panel.PanelAvatarChooser avatarAdmin;
     private org.edisoncor.gui.button.ButtonAction buttonAction1;
+    private org.edisoncor.gui.button.ButtonAction buttonAction10;
+    private org.edisoncor.gui.button.ButtonAction buttonAction11;
+    private org.edisoncor.gui.button.ButtonAction buttonAction12;
+    private org.edisoncor.gui.button.ButtonAction buttonAction13;
+    private org.edisoncor.gui.button.ButtonAction buttonAction14;
+    private org.edisoncor.gui.button.ButtonAction buttonAction15;
+    private org.edisoncor.gui.button.ButtonAction buttonAction16;
+    private org.edisoncor.gui.button.ButtonAction buttonAction17;
     private org.edisoncor.gui.button.ButtonAction buttonAction2;
     private org.edisoncor.gui.button.ButtonAction buttonAction3;
     private org.edisoncor.gui.button.ButtonAction buttonAction4;
@@ -975,17 +1273,20 @@ public class interfaz extends javax.swing.JFrame implements Runnable {
     private org.edisoncor.gui.button.ButtonAction buttonAction7;
     private org.edisoncor.gui.button.ButtonAction buttonAction8;
     private org.edisoncor.gui.button.ButtonAction buttonAction9;
-    private com.toedter.calendar.JDateChooser jDateChooser1;
+    private com.toedter.calendar.JDateChooser dcAdminClienteFecha;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JList<String> jList1;
+    private javax.swing.JList<String> jList2;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTable jTable1;
     private org.edisoncor.gui.label.LabelMetric labelMetric1;
+    private org.edisoncor.gui.label.LabelMetric labelMetric10;
     private org.edisoncor.gui.label.LabelMetric labelMetric11;
     private org.edisoncor.gui.label.LabelMetric labelMetric12;
     private org.edisoncor.gui.label.LabelMetric labelMetric13;
@@ -998,6 +1299,12 @@ public class interfaz extends javax.swing.JFrame implements Runnable {
     private org.edisoncor.gui.label.LabelMetric labelMetric2;
     private org.edisoncor.gui.label.LabelMetric labelMetric20;
     private org.edisoncor.gui.label.LabelMetric labelMetric21;
+    private org.edisoncor.gui.label.LabelMetric labelMetric22;
+    private org.edisoncor.gui.label.LabelMetric labelMetric23;
+    private org.edisoncor.gui.label.LabelMetric labelMetric24;
+    private org.edisoncor.gui.label.LabelMetric labelMetric25;
+    private org.edisoncor.gui.label.LabelMetric labelMetric26;
+    private org.edisoncor.gui.label.LabelMetric labelMetric27;
     private org.edisoncor.gui.label.LabelMetric labelMetric3;
     private org.edisoncor.gui.label.LabelMetric labelMetric5;
     private org.edisoncor.gui.label.LabelMetric labelMetric6;
@@ -1006,11 +1313,17 @@ public class interfaz extends javax.swing.JFrame implements Runnable {
     private org.edisoncor.gui.label.LabelMetric labelMetric9;
     private org.edisoncor.gui.label.LabelTask labelTask1;
     private org.edisoncor.gui.label.LabelTask labelTask2;
+    private org.edisoncor.gui.label.LabelTask labelTask3;
+    private javax.swing.JScrollPane listAdminAdministradores;
+    private javax.swing.JScrollPane listAdminAdministradores1;
     private org.edisoncor.gui.panel.Panel login;
     private org.edisoncor.gui.passwordField.PasswordFieldRound loginConstraseña;
     private org.edisoncor.gui.button.ButtonAction loginEntrar;
     private org.edisoncor.gui.textField.TextFieldRound loginUsuario;
     private org.edisoncor.gui.panel.Panel panel1;
+    private org.edisoncor.gui.panel.Panel panel10;
+    private org.edisoncor.gui.panel.Panel panel11;
+    private org.edisoncor.gui.panel.Panel panel12;
     private org.edisoncor.gui.panel.Panel panel2;
     private org.edisoncor.gui.panel.Panel panel3;
     private org.edisoncor.gui.panel.Panel panel4;
@@ -1018,15 +1331,28 @@ public class interfaz extends javax.swing.JFrame implements Runnable {
     private org.edisoncor.gui.panel.Panel panel6;
     private org.edisoncor.gui.panel.Panel panel7;
     private org.edisoncor.gui.panel.Panel panel8;
+    private org.edisoncor.gui.panel.Panel panel9;
     private org.edisoncor.gui.panel.PanelCurves panelCurves2;
     private org.edisoncor.gui.panel.Panel panelPrincipal;
     private javax.swing.JLabel reloj;
-    private org.edisoncor.gui.textField.TextField textField11;
-    private org.edisoncor.gui.textField.TextField textField12;
-    private org.edisoncor.gui.textField.TextField textField13;
-    private org.edisoncor.gui.textField.TextField textField14;
-    private org.edisoncor.gui.textField.TextField textField3;
-    private org.edisoncor.gui.textField.TextField textField4;
-    private org.edisoncor.gui.textField.TextField textField5;
+    private org.edisoncor.gui.textField.TextField txtAdminAdministradorApellidos;
+    private org.edisoncor.gui.textField.TextField txtAdminAdministradorApellidos1;
+    private org.edisoncor.gui.textField.TextField txtAdminAdministradorCodPostal;
+    private org.edisoncor.gui.textField.TextField txtAdminAdministradorCodPostal1;
+    private org.edisoncor.gui.textField.TextField txtAdminAdministradorCorreo;
+    private org.edisoncor.gui.textField.TextField txtAdminAdministradorCorreo1;
+    private org.edisoncor.gui.textField.TextField txtAdminAdministradorDireccion;
+    private org.edisoncor.gui.textField.TextField txtAdminAdministradorDireccion1;
+    private org.edisoncor.gui.textField.TextField txtAdminAdministradorNombre;
+    private org.edisoncor.gui.textField.TextField txtAdminAdministradorNombre1;
+    private org.edisoncor.gui.textField.TextField txtAdminAdministradorTelefono;
+    private org.edisoncor.gui.textField.TextField txtAdminAdministradorTelefono1;
+    private org.edisoncor.gui.textField.TextField txtAdminClienteApellidos;
+    private org.edisoncor.gui.textField.TextField txtAdminClienteCiudad;
+    private org.edisoncor.gui.textField.TextField txtAdminClienteCodPostal;
+    private org.edisoncor.gui.textField.TextField txtAdminClienteCorreo;
+    private org.edisoncor.gui.textField.TextField txtAdminClienteDireccion;
+    private org.edisoncor.gui.textField.TextField txtAdminClienteNombre;
+    private org.edisoncor.gui.textField.TextField txtAdminClienteTelefono;
     // End of variables declaration//GEN-END:variables
 }

@@ -79,7 +79,7 @@
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <EmptySpace min="0" pref="659" max="32767" attributes="0"/>
+              <EmptySpace min="0" pref="742" max="32767" attributes="0"/>
               <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                   <Component id="login" alignment="0" max="32767" attributes="0"/>
               </Group>
@@ -225,6 +225,13 @@
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
                   </Group>
+                  <Group type="103" rootIndex="3" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="administradorTrabajadores" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
@@ -255,10 +262,27 @@
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
                   </Group>
+                  <Group type="103" rootIndex="3" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace pref="28" max="32767" attributes="0"/>
+                          <Component id="administradorTrabajadores" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
+            <Component class="javax.swing.JLabel" name="reloj">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="18" style="0"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+              </Properties>
+            </Component>
             <Component class="org.edisoncor.gui.button.ButtonCircle" name="adminRetroceso">
               <Properties>
                 <Property name="text" type="java.lang.String" value="buttonCircle1"/>
@@ -292,9 +316,9 @@
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace pref="314" max="32767" attributes="0"/>
+                          <EmptySpace pref="90" max="32767" attributes="0"/>
                           <Component id="adminAvatarBoton" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="314" max="32767" attributes="0"/>
+                          <EmptySpace pref="90" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -371,7 +395,7 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="adminAdministradoresList" max="32767" attributes="0"/>
+                              <Component id="listAdminAdministradores" max="32767" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="panel2" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
@@ -384,7 +408,7 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
                                   <Component id="panel2" max="32767" attributes="0"/>
-                                  <Component id="adminAdministradoresList" max="32767" attributes="0"/>
+                                  <Component id="listAdminAdministradores" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
@@ -392,7 +416,7 @@
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Container class="javax.swing.JScrollPane" name="adminAdministradoresList">
+                    <Container class="javax.swing.JScrollPane" name="listAdminAdministradores">
                       <AuxValues>
                         <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
                       </AuxValues>
@@ -516,25 +540,25 @@
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                           <Group type="102" attributes="0">
-                                              <Component id="adminAdministradorNombre" max="32767" attributes="0"/>
+                                              <Component id="txtAdminAdministradorNombre" max="32767" attributes="0"/>
                                               <EmptySpace type="separate" max="-2" attributes="0"/>
                                               <Component id="labelMetric12" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="adminAdministradorApellidos" min="-2" pref="352" max="-2" attributes="0"/>
+                                              <Component id="txtAdminAdministradorApellidos" min="-2" pref="352" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="102" attributes="0">
-                                              <Component id="adminAdministradorTelefono" min="-2" pref="223" max="-2" attributes="0"/>
+                                              <Component id="txtAdminAdministradorTelefono" min="-2" pref="223" max="-2" attributes="0"/>
                                               <EmptySpace type="separate" max="-2" attributes="0"/>
                                               <Component id="labelMetric15" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
-                                              <Component id="adminAdministradorCorreo" max="32767" attributes="0"/>
+                                              <Component id="txtAdminAdministradorCorreo" max="32767" attributes="0"/>
                                           </Group>
                                           <Group type="102" alignment="0" attributes="0">
-                                              <Component id="adminAdministradorDireccion" min="-2" pref="408" max="-2" attributes="0"/>
+                                              <Component id="txtAdminAdministradorDireccion" min="-2" pref="408" max="-2" attributes="0"/>
                                               <EmptySpace type="separate" max="-2" attributes="0"/>
                                               <Component id="labelMetric6" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="adminAdministradorCodPostal" min="-2" pref="145" max="-2" attributes="0"/>
+                                              <Component id="txtAdminAdministradorCodPostal" min="-2" pref="145" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
                                       <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
@@ -547,28 +571,28 @@
                                       <EmptySpace pref="38" max="32767" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Component id="labelMetric5" min="-2" max="-2" attributes="0"/>
-                                          <Component id="adminAdministradorNombre" min="-2" pref="24" max="-2" attributes="0"/>
+                                          <Component id="txtAdminAdministradorNombre" min="-2" pref="24" max="-2" attributes="0"/>
                                           <Component id="labelMetric12" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="adminAdministradorApellidos" alignment="0" min="-2" pref="24" max="-2" attributes="0"/>
+                                          <Component id="txtAdminAdministradorApellidos" alignment="0" min="-2" pref="24" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="1" attributes="0">
                                           <Group type="103" alignment="1" groupAlignment="0" attributes="0">
                                               <Component id="labelMetric13" alignment="0" min="-2" max="-2" attributes="0"/>
                                               <Component id="labelMetric6" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="adminAdministradorCodPostal" alignment="0" min="-2" pref="24" max="-2" attributes="0"/>
+                                              <Component id="txtAdminAdministradorCodPostal" alignment="0" min="-2" pref="24" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="102" alignment="1" attributes="0">
-                                              <Component id="adminAdministradorDireccion" min="-2" pref="24" max="-2" attributes="0"/>
+                                              <Component id="txtAdminAdministradorDireccion" min="-2" pref="24" max="-2" attributes="0"/>
                                               <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
                                       <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Component id="labelMetric14" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="adminAdministradorTelefono" alignment="0" min="-2" pref="24" max="-2" attributes="0"/>
+                                          <Component id="txtAdminAdministradorTelefono" alignment="0" min="-2" pref="24" max="-2" attributes="0"/>
                                           <Component id="labelMetric15" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="adminAdministradorCorreo" alignment="0" min="-2" pref="24" max="-2" attributes="0"/>
+                                          <Component id="txtAdminAdministradorCorreo" alignment="0" min="-2" pref="24" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
                                   </Group>
@@ -584,7 +608,7 @@
                                 </Property>
                               </Properties>
                             </Component>
-                            <Component class="org.edisoncor.gui.textField.TextField" name="adminAdministradorNombre">
+                            <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminAdministradorNombre">
                             </Component>
                             <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric12">
                               <Properties>
@@ -594,9 +618,9 @@
                                 </Property>
                               </Properties>
                             </Component>
-                            <Component class="org.edisoncor.gui.textField.TextField" name="adminAdministradorApellidos">
+                            <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminAdministradorApellidos">
                             </Component>
-                            <Component class="org.edisoncor.gui.textField.TextField" name="adminAdministradorDireccion">
+                            <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminAdministradorDireccion">
                             </Component>
                             <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric6">
                               <Properties>
@@ -606,7 +630,7 @@
                                 </Property>
                               </Properties>
                             </Component>
-                            <Component class="org.edisoncor.gui.textField.TextField" name="adminAdministradorCodPostal">
+                            <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminAdministradorCodPostal">
                             </Component>
                             <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric13">
                               <Properties>
@@ -624,7 +648,7 @@
                                 </Property>
                               </Properties>
                             </Component>
-                            <Component class="org.edisoncor.gui.textField.TextField" name="adminAdministradorTelefono">
+                            <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminAdministradorTelefono">
                             </Component>
                             <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric15">
                               <Properties>
@@ -634,7 +658,7 @@
                                 </Property>
                               </Properties>
                             </Component>
-                            <Component class="org.edisoncor.gui.textField.TextField" name="adminAdministradorCorreo">
+                            <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminAdministradorCorreo">
                             </Component>
                           </SubComponents>
                         </Container>
@@ -812,12 +836,9 @@
                               <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
                               <Component id="labelMetric16" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="panel6" min="-2" max="-2" attributes="0"/>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Component id="panel8" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="88" max="-2" attributes="0"/>
-                                  </Group>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="panel6" max="32767" attributes="0"/>
+                                  <Component id="panel8" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -922,28 +943,28 @@
                                       <Group type="102" alignment="1" attributes="0">
                                           <Component id="labelMetric7" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-                                          <Component id="textField3" max="32767" attributes="0"/>
+                                          <Component id="txtAdminClienteNombre" max="32767" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Component id="labelMetric17" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                          <Component id="textField11" min="-2" pref="352" max="-2" attributes="0"/>
+                                          <Component id="txtAdminClienteApellidos" min="-2" pref="352" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="1" attributes="0">
                                           <Group type="103" groupAlignment="1" attributes="0">
                                               <Group type="102" alignment="1" attributes="0">
                                                   <Component id="labelMetric8" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                  <Component id="textField4" max="32767" attributes="0"/>
+                                                  <Component id="txtAdminClienteCodPostal" max="32767" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="0" attributes="0">
                                                   <Component id="labelMetric9" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="textField5" max="32767" attributes="0"/>
+                                                  <Component id="txtAdminClienteCiudad" max="32767" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="1" attributes="0">
                                                   <Component id="labelMetric21" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="jDateChooser1" min="-2" pref="151" max="-2" attributes="0"/>
+                                                  <Component id="dcAdminClienteFecha" min="-2" pref="151" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                           <Group type="103" groupAlignment="0" attributes="0">
@@ -953,12 +974,12 @@
                                                       <Group type="102" alignment="0" attributes="0">
                                                           <Component id="labelMetric18" min="-2" max="-2" attributes="0"/>
                                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                          <Component id="textField12" min="-2" pref="349" max="-2" attributes="0"/>
+                                                          <Component id="txtAdminClienteDireccion" min="-2" pref="349" max="-2" attributes="0"/>
                                                       </Group>
                                                       <Group type="102" alignment="0" attributes="0">
                                                           <Component id="labelMetric19" min="-2" max="-2" attributes="0"/>
                                                           <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
-                                                          <Component id="textField13" max="32767" attributes="0"/>
+                                                          <Component id="txtAdminClienteTelefono" max="32767" attributes="0"/>
                                                       </Group>
                                                   </Group>
                                               </Group>
@@ -966,7 +987,7 @@
                                                   <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
                                                   <Component id="labelMetric20" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace max="32767" attributes="0"/>
-                                                  <Component id="textField14" min="-2" pref="349" max="-2" attributes="0"/>
+                                                  <Component id="txtAdminClienteCorreo" min="-2" pref="349" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                       </Group>
@@ -981,32 +1002,32 @@
                                   <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="labelMetric7" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="textField3" alignment="0" min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Component id="txtAdminClienteNombre" alignment="0" min="-2" pref="24" max="-2" attributes="0"/>
                                       <Component id="labelMetric17" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="textField11" alignment="0" min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Component id="txtAdminClienteApellidos" alignment="0" min="-2" pref="24" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="1" attributes="0">
                                       <Component id="labelMetric21" min="-2" max="-2" attributes="0"/>
                                       <Component id="labelMetric18" alignment="1" min="-2" max="-2" attributes="0"/>
-                                      <Component id="textField12" alignment="1" min="-2" pref="24" max="-2" attributes="0"/>
-                                      <Component id="jDateChooser1" min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Component id="txtAdminClienteDireccion" alignment="1" min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Component id="dcAdminClienteFecha" min="-2" pref="24" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="labelMetric19" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="textField13" alignment="0" min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Component id="txtAdminClienteTelefono" alignment="0" min="-2" pref="24" max="-2" attributes="0"/>
                                       <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                                          <Component id="textField5" min="-2" pref="24" max="-2" attributes="0"/>
+                                          <Component id="txtAdminClienteCiudad" min="-2" pref="24" max="-2" attributes="0"/>
                                           <Component id="labelMetric9" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="labelMetric8" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="textField4" alignment="0" min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Component id="txtAdminClienteCodPostal" alignment="0" min="-2" pref="24" max="-2" attributes="0"/>
                                       <Component id="labelMetric20" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="textField14" alignment="0" min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Component id="txtAdminClienteCorreo" alignment="0" min="-2" pref="24" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace pref="33" max="32767" attributes="0"/>
                               </Group>
@@ -1022,7 +1043,7 @@
                             </Property>
                           </Properties>
                         </Component>
-                        <Component class="org.edisoncor.gui.textField.TextField" name="textField3">
+                        <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminClienteNombre">
                         </Component>
                         <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric17">
                           <Properties>
@@ -1032,9 +1053,9 @@
                             </Property>
                           </Properties>
                         </Component>
-                        <Component class="org.edisoncor.gui.textField.TextField" name="textField11">
+                        <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminClienteApellidos">
                         </Component>
-                        <Component class="org.edisoncor.gui.textField.TextField" name="textField12">
+                        <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminClienteDireccion">
                         </Component>
                         <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric8">
                           <Properties>
@@ -1044,9 +1065,9 @@
                             </Property>
                           </Properties>
                         </Component>
-                        <Component class="org.edisoncor.gui.textField.TextField" name="textField4">
+                        <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminClienteCodPostal">
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="textField4ActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtAdminClienteCodPostalActionPerformed"/>
                           </Events>
                         </Component>
                         <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric18">
@@ -1065,7 +1086,7 @@
                             </Property>
                           </Properties>
                         </Component>
-                        <Component class="org.edisoncor.gui.textField.TextField" name="textField13">
+                        <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminClienteTelefono">
                         </Component>
                         <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric20">
                           <Properties>
@@ -1075,9 +1096,9 @@
                             </Property>
                           </Properties>
                         </Component>
-                        <Component class="org.edisoncor.gui.textField.TextField" name="textField14">
+                        <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminClienteCorreo">
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="textField14ActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtAdminClienteCorreoActionPerformed"/>
                           </Events>
                         </Component>
                         <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric21">
@@ -1096,9 +1117,9 @@
                             </Property>
                           </Properties>
                         </Component>
-                        <Component class="org.edisoncor.gui.textField.TextField" name="textField5">
+                        <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminClienteCiudad">
                         </Component>
-                        <Component class="com.toedter.calendar.JDateChooser" name="jDateChooser1">
+                        <Component class="com.toedter.calendar.JDateChooser" name="dcAdminClienteFecha">
                         </Component>
                       </SubComponents>
                     </Container>
@@ -1116,16 +1137,29 @@
                       <Layout>
                         <DimensionLayout dim="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
+                              <Group type="102" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="buttonAction5" min="-2" max="-2" attributes="0"/>
-                                      <Component id="buttonAction4" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace pref="38" max="32767" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="buttonAction6" alignment="1" min="-2" max="-2" attributes="0"/>
-                                      <Component id="buttonAction3" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="buttonAction5" min="-2" max="-2" attributes="0"/>
+                                              <Component id="buttonAction4" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace pref="38" max="32767" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="buttonAction6" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              <Component id="buttonAction3" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="buttonAction10" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="32767" attributes="0"/>
+                                          <Component id="buttonAction11" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                          <Component id="buttonAction12" min="-2" max="-2" attributes="0"/>
+                                      </Group>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                               </Group>
@@ -1134,17 +1168,24 @@
                         <DimensionLayout dim="1">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="buttonAction6" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="buttonAction4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="buttonAction6" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="buttonAction3" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="buttonAction5" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace pref="23" max="32767" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="buttonAction12" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="buttonAction10" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="buttonAction11" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -1152,17 +1193,20 @@
                       <SubComponents>
                         <Component class="org.edisoncor.gui.button.ButtonAction" name="buttonAction4">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="buttonAction3"/>
+                            <Property name="text" type="java.lang.String" value="Editar"/>
                           </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonAction4ActionPerformed"/>
+                          </Events>
                         </Component>
                         <Component class="org.edisoncor.gui.button.ButtonAction" name="buttonAction3">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="buttonAction3"/>
+                            <Property name="text" type="java.lang.String" value="Modificar"/>
                           </Properties>
                         </Component>
                         <Component class="org.edisoncor.gui.button.ButtonAction" name="buttonAction6">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="buttonAction3"/>
+                            <Property name="text" type="java.lang.String" value="Nuevo"/>
                           </Properties>
                           <Events>
                             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonAction6ActionPerformed"/>
@@ -1170,7 +1214,22 @@
                         </Component>
                         <Component class="org.edisoncor.gui.button.ButtonAction" name="buttonAction5">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="buttonAction3"/>
+                            <Property name="text" type="java.lang.String" value="Guardar"/>
+                          </Properties>
+                        </Component>
+                        <Component class="org.edisoncor.gui.button.ButtonAction" name="buttonAction10">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Tarifas"/>
+                          </Properties>
+                        </Component>
+                        <Component class="org.edisoncor.gui.button.ButtonAction" name="buttonAction11">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Mensualidad"/>
+                          </Properties>
+                        </Component>
+                        <Component class="org.edisoncor.gui.button.ButtonAction" name="buttonAction12">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Eliminar"/>
                           </Properties>
                         </Component>
                       </SubComponents>
@@ -1179,16 +1238,422 @@
                 </Container>
               </SubComponents>
             </Container>
-            <Component class="javax.swing.JLabel" name="reloj">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Tahoma" size="18" style="0"/>
-                </Property>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                </Property>
-              </Properties>
-            </Component>
+            <Container class="org.edisoncor.gui.panel.Panel" name="administradorTrabajadores">
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="panel9" alignment="0" max="32767" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="labelTask3" min="-2" pref="306" max="-2" attributes="0"/>
+                                  <EmptySpace min="0" pref="845" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="labelTask3" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="panel9" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="org.edisoncor.gui.label.LabelTask" name="labelTask3">
+                  <Properties>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="f0" green="f0" red="f0" type="rgb"/>
+                    </Property>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/imagenes/trabajador42.png"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Gestion Trabajadores"/>
+                    <Property name="toolTipText" type="java.lang.String" value=""/>
+                    <Property name="description" type="java.lang.String" value=" "/>
+                  </Properties>
+                </Component>
+                <Container class="org.edisoncor.gui.panel.Panel" name="panel9">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                        <EtchetBorder/>
+                      </Border>
+                    </Property>
+                  </Properties>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="listAdminAdministradores1" max="32767" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="panel10" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="panel10" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="listAdminAdministradores1" alignment="1" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Container class="javax.swing.JScrollPane" name="listAdminAdministradores1">
+                      <AuxValues>
+                        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                      </AuxValues>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                      <SubComponents>
+                        <Component class="javax.swing.JList" name="jList2">
+                          <Properties>
+                            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="21" green="6" red="0" type="rgb"/>
+                            </Property>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Tahoma" size="14" style="1"/>
+                            </Property>
+                            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="f0" green="f0" red="f0" type="rgb"/>
+                            </Property>
+                            <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
+                              <StringArray count="5">
+                                <StringItem index="0" value="Item 1"/>
+                                <StringItem index="1" value="Item 2"/>
+                                <StringItem index="2" value="Item 3"/>
+                                <StringItem index="3" value="Item 4"/>
+                                <StringItem index="4" value="Item 5"/>
+                              </StringArray>
+                            </Property>
+                          </Properties>
+                          <AuxValues>
+                            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                          </AuxValues>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                    <Container class="org.edisoncor.gui.panel.Panel" name="panel10">
+                      <Properties>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                            <LineBorder>
+                              <Color PropertyName="color" blue="f0" green="f0" red="f0" type="rgb"/>
+                            </LineBorder>
+                          </Border>
+                        </Property>
+                      </Properties>
+
+                      <Layout>
+                        <DimensionLayout dim="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="labelMetric22" alignment="0" max="32767" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="1" attributes="0">
+                                              <Group type="102" alignment="1" attributes="0">
+                                                  <Component id="jLabel4" min="-2" pref="205" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="370" max="-2" attributes="0"/>
+                                                  <Component id="panel12" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Component id="panel11" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                        </DimensionLayout>
+                        <DimensionLayout dim="1">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace pref="44" max="32767" attributes="0"/>
+                                  <Component id="labelMetric22" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="panel11" min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+                                          <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="panel12" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                        </DimensionLayout>
+                      </Layout>
+                      <SubComponents>
+                        <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric22">
+                          <Properties>
+                            <Property name="horizontalAlignment" type="int" value="0"/>
+                            <Property name="text" type="java.lang.String" value="DATOS TRABAJADORES"/>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Arial" size="36" style="1"/>
+                            </Property>
+                          </Properties>
+                        </Component>
+                        <Container class="org.edisoncor.gui.panel.Panel" name="panel11">
+                          <Properties>
+                            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                                <LineBorder>
+                                  <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                                </LineBorder>
+                              </Border>
+                            </Property>
+                          </Properties>
+
+                          <Layout>
+                            <DimensionLayout dim="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <EmptySpace pref="28" max="32767" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="labelMetric25" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="labelMetric10" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="labelMetric26" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="txtAdminAdministradorNombre1" max="32767" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="labelMetric23" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              <Component id="txtAdminAdministradorApellidos1" min="-2" pref="352" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="txtAdminAdministradorTelefono1" min="-2" pref="223" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="labelMetric27" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                                              <Component id="txtAdminAdministradorCorreo1" max="32767" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="txtAdminAdministradorDireccion1" min="-2" pref="408" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="labelMetric24" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              <Component id="txtAdminAdministradorCodPostal1" min="-2" pref="145" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                            </DimensionLayout>
+                            <DimensionLayout dim="1">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace pref="38" max="32767" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="labelMetric10" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="txtAdminAdministradorNombre1" alignment="0" min="-2" pref="24" max="-2" attributes="0"/>
+                                          <Component id="labelMetric23" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="txtAdminAdministradorApellidos1" alignment="0" min="-2" pref="24" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                                              <Component id="labelMetric25" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="labelMetric24" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtAdminAdministradorCodPostal1" alignment="0" min="-2" pref="24" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <Component id="txtAdminAdministradorDireccion1" min="-2" pref="24" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="labelMetric26" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="txtAdminAdministradorTelefono1" alignment="0" min="-2" pref="24" max="-2" attributes="0"/>
+                                          <Component id="labelMetric27" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="txtAdminAdministradorCorreo1" alignment="0" min="-2" pref="24" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                            </DimensionLayout>
+                          </Layout>
+                          <SubComponents>
+                            <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric10">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Nombre:"/>
+                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                  <Font name="Arial" size="19" style="1"/>
+                                </Property>
+                              </Properties>
+                            </Component>
+                            <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminAdministradorNombre1">
+                            </Component>
+                            <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric23">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Apellidos:"/>
+                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                  <Font name="Arial" size="19" style="1"/>
+                                </Property>
+                              </Properties>
+                            </Component>
+                            <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminAdministradorApellidos1">
+                            </Component>
+                            <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminAdministradorDireccion1">
+                            </Component>
+                            <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric24">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Cod. Postal"/>
+                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                  <Font name="Arial" size="19" style="1"/>
+                                </Property>
+                              </Properties>
+                            </Component>
+                            <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminAdministradorCodPostal1">
+                            </Component>
+                            <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric25">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Direccion:"/>
+                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                  <Font name="Arial" size="19" style="1"/>
+                                </Property>
+                              </Properties>
+                            </Component>
+                            <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric26">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Telefono:"/>
+                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                  <Font name="Arial" size="19" style="1"/>
+                                </Property>
+                              </Properties>
+                            </Component>
+                            <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminAdministradorTelefono1">
+                            </Component>
+                            <Component class="org.edisoncor.gui.label.LabelMetric" name="labelMetric27">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Correo:"/>
+                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                  <Font name="Arial" size="19" style="1"/>
+                                </Property>
+                              </Properties>
+                            </Component>
+                            <Component class="org.edisoncor.gui.textField.TextField" name="txtAdminAdministradorCorreo1">
+                            </Component>
+                          </SubComponents>
+                        </Container>
+                        <Container class="org.edisoncor.gui.panel.Panel" name="panel12">
+                          <Properties>
+                            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                                <LineBorder>
+                                  <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                                </LineBorder>
+                              </Border>
+                            </Property>
+                          </Properties>
+
+                          <Layout>
+                            <DimensionLayout dim="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="buttonAction14" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="buttonAction13" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="buttonAction17" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="buttonAction16" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="buttonAction15" alignment="0" max="32767" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                            </DimensionLayout>
+                            <DimensionLayout dim="1">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="buttonAction14" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="buttonAction16" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="buttonAction15" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="buttonAction13" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="buttonAction17" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                            </DimensionLayout>
+                          </Layout>
+                          <SubComponents>
+                            <Component class="org.edisoncor.gui.button.ButtonAction" name="buttonAction13">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="buttonAction1"/>
+                              </Properties>
+                            </Component>
+                            <Component class="org.edisoncor.gui.button.ButtonAction" name="buttonAction14">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="buttonAction1"/>
+                              </Properties>
+                            </Component>
+                            <Component class="org.edisoncor.gui.button.ButtonAction" name="buttonAction15">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="buttonAction1"/>
+                              </Properties>
+                            </Component>
+                            <Component class="org.edisoncor.gui.button.ButtonAction" name="buttonAction16">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="buttonAction1"/>
+                              </Properties>
+                            </Component>
+                            <Component class="org.edisoncor.gui.button.ButtonAction" name="buttonAction17">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="buttonAction1"/>
+                              </Properties>
+                            </Component>
+                          </SubComponents>
+                        </Container>
+                        <Component class="javax.swing.JLabel" name="jLabel4">
+                          <Properties>
+                            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                              <Image iconType="3" name="/imagenes/logo205.png"/>
+                            </Property>
+                          </Properties>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
           </SubComponents>
         </Container>
       </SubComponents>
