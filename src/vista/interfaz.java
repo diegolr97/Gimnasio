@@ -7,6 +7,9 @@ package vista;
 
 import java.awt.Image;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.List;
 import javax.imageio.ImageIO;
 import org.edisoncor.gui.util.Avatar;
@@ -15,7 +18,11 @@ import org.edisoncor.gui.util.Avatar;
  *
  * @author Manuel
  */
-public class interfaz extends javax.swing.JFrame {
+public class interfaz extends javax.swing.JFrame implements Runnable {
+    
+    String hora,minutos,segundos,ampm;
+    Calendar calendario;
+    Thread h1;
 
     /**
      * Creates new form interfaz
@@ -28,6 +35,8 @@ public class interfaz extends javax.swing.JFrame {
         administrador.setVisible(false);
         administradorAdmin.setVisible(false);
         administradorClient.setVisible(false);
+        h1= new Thread(this);
+        h1.start();
     }
     
     public void llenarMenu(){
@@ -49,6 +58,34 @@ public class interfaz extends javax.swing.JFrame {
             return null;
         }
     }
+    
+    public void run(){
+            Thread ct = Thread.currentThread();
+             while(ct == h1) {
+            calcula();
+            this.reloj.setText(hora + ":" + minutos + ":" + segundos + " "+ampm);
+             try {
+            Thread.sleep(1000);
+            }catch(InterruptedException e) {}
+            }
+    }
+    
+  
+        
+       public void calcula () {
+            Calendar calendario = new GregorianCalendar();
+            Date fechaHoraActual = new Date();
+
+            calendario.setTime(fechaHoraActual);
+            ampm = calendario.get(Calendar.AM_PM)==Calendar.AM?"AM":"PM";
+            if(ampm.equals("PM")){
+            int h = calendario.get(Calendar.HOUR_OF_DAY)-12;
+            hora = h>9?""+h:"0"+h;
+            }else{
+            hora = calendario.get(Calendar.HOUR_OF_DAY)>9?""+calendario.get(Calendar.HOUR_OF_DAY):"0"+calendario.get(Calendar.HOUR_OF_DAY); }
+            minutos = calendario.get(Calendar.MINUTE)>9?""+calendario.get(Calendar.MINUTE):"0"+calendario.get(Calendar.MINUTE);
+            segundos = calendario.get(Calendar.SECOND)>9?""+calendario.get(Calendar.SECOND):"0"+calendario.get(Calendar.SECOND);
+}
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -131,6 +168,7 @@ public class interfaz extends javax.swing.JFrame {
         buttonAction3 = new org.edisoncor.gui.button.ButtonAction();
         buttonAction6 = new org.edisoncor.gui.button.ButtonAction();
         buttonAction5 = new org.edisoncor.gui.button.ButtonAction();
+        reloj = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -713,6 +751,9 @@ public class interfaz extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        reloj.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        reloj.setForeground(new java.awt.Color(255, 255, 255));
+
         javax.swing.GroupLayout administradorLayout = new javax.swing.GroupLayout(administrador);
         administrador.setLayout(administradorLayout);
         administradorLayout.setHorizontalGroup(
@@ -723,7 +764,9 @@ public class interfaz extends javax.swing.JFrame {
                 .addComponent(labelMetric1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(adminUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(438, 438, 438)
+                .addComponent(reloj, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 482, Short.MAX_VALUE)
                 .addComponent(adminRetroceso, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
             .addGroup(administradorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -738,11 +781,12 @@ public class interfaz extends javax.swing.JFrame {
             administradorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(administradorLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(administradorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(administradorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(adminRetroceso, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(administradorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(labelMetric1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(adminUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(adminUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(reloj)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(avatarAdmin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(administradorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -976,6 +1020,7 @@ public class interfaz extends javax.swing.JFrame {
     private org.edisoncor.gui.panel.Panel panel8;
     private org.edisoncor.gui.panel.PanelCurves panelCurves2;
     private org.edisoncor.gui.panel.Panel panelPrincipal;
+    private javax.swing.JLabel reloj;
     private org.edisoncor.gui.textField.TextField textField11;
     private org.edisoncor.gui.textField.TextField textField12;
     private org.edisoncor.gui.textField.TextField textField13;
